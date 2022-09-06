@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\clem6\Bureau\Cours\COO\Module 2\TP1\.metadata\.plugins\org.eclipse.jdt.core
+1798525465.index
+262142283.index
+3732392153.index
+3040653278.index
+1865797976.index

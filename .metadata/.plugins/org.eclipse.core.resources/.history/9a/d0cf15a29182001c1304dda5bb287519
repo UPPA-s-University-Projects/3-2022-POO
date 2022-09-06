@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+
+public class Table {
+    private int num;
+    private Client sonClient = null;
+
+
+    public Table() {
+    }
+
+    public Table(int num, Client sonClient) {
+        this.num = num;
+        this.sonClient = sonClient;
+    }
+
+    public int getNum() {
+        return this.num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public Client getSonClient() {
+        return this.sonClient;
+    }
+
+    public void setSonClient(Client sonClient) {
+        this.sonClient = sonClient;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " num='" + getNum() + "'" +
+            ", sonClient='" + getSonClient() + "'" +
+            "}";
+    }
+
+
+    public void lierClient(Client client){
+        sonClient = client;
+    }
+}

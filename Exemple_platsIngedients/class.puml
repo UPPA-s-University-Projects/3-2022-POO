@@ -1,0 +1,28 @@
+@startuml
+
+class PlatsCuisine{
+    - String libelle
+    - String recette
+    - Ingredient[] SesIngredients
+    
+    + lierUnIngredient(Ingredient ingredient)
+    + delierUnIngredient(Ingredient ingredient)
+}
+
+class Ingredient{
+    - String libelle
+    - PlatsCuisine sonPlateAssocie
+
+    + lierSonPlat(PlatsCuisine plat)
+    + delierSonPlat()
+}
+
+
+
+PlatsCuisine "0..1" --*  "0..*" Ingredient
+
+' Object : equals()
+' ArrayList : Object[] elementData
+' ArrayList : size()
+
+@enduml

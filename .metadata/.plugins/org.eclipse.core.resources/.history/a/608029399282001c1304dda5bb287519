@@ -1,0 +1,58 @@
+import java.util.ArrayList;
+
+public class Client {
+
+    private String nom;
+    private String tel;
+    private Table saTable = null;
+
+
+    public Client(String nom, String tel) {
+        this.nom = nom;
+        this.tel = tel;
+        this.saTable = null;
+    }
+
+    public String getNom() {
+        return this.nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getTel() {
+        return this.tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    public Table getSaTable() {
+        return this.saTable;
+    }
+
+    public void setSaTable(Table saTable) {
+        this.saTable = saTable;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " nom='" + getNom() + "'" +
+            ", tel='" + getTel() + "'" +
+            ", saTable='" + getSaTable() + "'" +
+            "}";
+    }
+
+
+    public void saTable(Table table){
+        saTable = table;
+    }
+
+    public void delierTable(){
+        saTable=null;
+    }
+
+}
